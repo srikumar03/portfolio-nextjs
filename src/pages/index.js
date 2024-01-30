@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>Sridhar Kumar</title>
         <meta name="description" content="Sridhar Kumar's Portfolio" />
       </Head>
       <main className=" ">Home</main>
