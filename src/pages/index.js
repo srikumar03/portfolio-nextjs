@@ -38,6 +38,7 @@ export default function Home() {
                 <Link href="/dummy.pdf" target="_blank">
                   Resume
                 </Link>
+                <Link href="mailto:sridharkumar5303@gmail.com">Mail</Link>
               </div>
             </div>
           </div>
