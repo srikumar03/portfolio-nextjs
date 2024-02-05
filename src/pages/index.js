@@ -7,6 +7,7 @@ import sri_avatar2 from "../../public/images/profile/developer-pic-1.png";
 import avatar from "../../public/images/profile/avatar_Rbg.png";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
+import { LinkArrow } from "@/components/Icons";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,11 +35,22 @@ export default function Home() {
                 projects and articles, showcasing my expertise in React.js and
                 web development
               </p>
-              <div>
-                <Link href="/dummy.pdf" target="_blank">
-                  Resume
+              <div className="flex gap-5 items-center self-start mt-2">
+                <Link
+                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark transition-all"
+                  // download={true}
+                  href="/dummy.pdf"
+                  target="_blank"
+                >
+                  Resume <LinkArrow className={"w-6 ml-1"} />
                 </Link>
-                <Link href="mailto:sridharkumar5303@gmail.com">Mail</Link>
+                <Link
+                  className="ml-4 text-lg font-medium capitalize text-dark underline hover:underline-offset-2"
+                  href="mailto:sridharkumar5303@gmail.com"
+                  target="_blank"
+                >
+                  Contact
+                </Link>
               </div>
             </div>
           </div>
