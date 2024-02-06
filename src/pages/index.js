@@ -8,6 +8,8 @@ import avatar from "../../public/images/profile/avatar_Rbg.png";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "@/components/Icons";
+import HireMe from "@/components/HireMe";
+import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,9 +21,9 @@ export default function Home() {
         <meta name="description" content="Sridhar Kumar's Portfolio" />
       </Head>
       <main className="flex items-center text-dark w-full min-h-screen">
-        <Layout>
+        <Layout className="pt-0">
           <div className="flex items-center justify-between w-full">
-            <div className="w-1/2 p-9">
+            <div className="w-1/2">
               <Image src={sri_avatar} alt="sri" className="w-full h-auto" />
             </div>
             <div className="w-1/2">
@@ -37,7 +39,7 @@ export default function Home() {
               </p>
               <div className="flex gap-5 items-center self-start mt-2">
                 <Link
-                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark transition-all"
+                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark transition-all"
                   // download={true}
                   href="/dummy.pdf"
                   target="_blank"
@@ -55,6 +57,11 @@ export default function Home() {
             </div>
           </div>
         </Layout>
+
+        <HireMe />
+        <div className="absolute right-8 bottom-8 inline-block w-24">
+          <Image src={lightBulb} alt="" className="w-full h-auto" />
+        </div>
       </main>
     </>
   );
