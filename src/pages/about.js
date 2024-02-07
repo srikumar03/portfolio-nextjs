@@ -5,8 +5,8 @@ import Layout from "@/components/Layout";
 import Image from "next/image";
 import profilepic from "../../public/images/profile/Sri_rbg_final.png";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
-import Skills from "@/components/skills";
-
+import Exp from "@/components/Exp";
+import Education from "@/components/Education";
 const AnimatedNumers = ({ value }) => {
   const ref = useRef(null);
 
@@ -35,9 +35,10 @@ const about = () => {
   return (
     <>
       <Head>
-        <title>CodeBucks | About Page</title>
+        <title>Sridhar | About Page</title>
         <meta name="bla bla bla" content="bla bla..." />
       </Head>
+
       <main className="flex w-full flex-col items-center justify-center">
         <Layout className="pt-16">
           <AnimatedText text="Passion Fuels Purpose!" className="mb-16" />
@@ -81,7 +82,7 @@ const about = () => {
             </div>
             <div className="col-span-2 flex flex-col items-end justify-between">
               <div className="flex flex-col items-end justify-between">
-                <span className="inline-block text-7xl font-bold">
+                <span className="inline-block text-6xl font-bold">
                   <AnimatedNumers value={10} />+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75">
@@ -90,7 +91,7 @@ const about = () => {
               </div>
 
               <div className="flex flex-col items-end justify-between">
-                <span className="inline-block text-7xl font-bold">
+                <span className="inline-block text-6xl font-bold">
                   <AnimatedNumers value={2} />+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75">
@@ -99,10 +100,11 @@ const about = () => {
               </div>
             </div>
           </div>
-          <Skills />
+
+          <Exp />
+          <Education />
         </Layout>
       </main>
-      ;
     </>
   );
 };
