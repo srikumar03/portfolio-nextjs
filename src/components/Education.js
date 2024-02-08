@@ -52,13 +52,6 @@ const Education = () => {
             into="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
             Intelligence"
           />
-          <Details
-            type="Bachelor Of Science In Computer Science"
-            time="2016-2020"
-            place="Massachusetts Institute Of Technology (MIT)"
-            into="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-            Intelligence"
-          />
         </ul>
       </div>
     </div>

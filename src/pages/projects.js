@@ -9,7 +9,9 @@ import project2 from "../../public/images/projects/crypto-screener-cover-image.j
 
 const FeatureProject = ({ type, title, summary, img, link, github }) => {
   return (
-    <article className="w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12">
+    <article className="w-full relative flex items-center justify-between rounded-2xl border border-solid border-dark bg-light shadow-2xl p-12">
+      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] rounded-br-3xl bg-dark" />
+
       <Link
         href={link}
         target="_blank"
@@ -45,9 +47,10 @@ const FeatureProject = ({ type, title, summary, img, link, github }) => {
   );
 };
 
-const Project = (title, type, img, link, github) => {
+const Project = ({ type, title, img, link, github }) => {
   return (
-    <article>
+    <article className="relative w-full flex flex-col items-center justify-between rounded-3xl border border-solid border-dark bg-light p-6">
+      <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark" />
       <Link
         href={link}
         target="_blank"
@@ -56,7 +59,7 @@ const Project = (title, type, img, link, github) => {
         <Image src={img} alt={title} className="w-full h-auto" />
       </Link>
 
-      <div className="w-full flex flex-col items-start justify-between pl-6">
+      <div className="w-full flex flex-col items-start justify-between">
         <span className="text-primary font-medium text-lg">{type}</span>
         <Link
           href={link}
@@ -65,16 +68,16 @@ const Project = (title, type, img, link, github) => {
         >
           <h2 className="my-2 w-full text-left text-4xl font-bold">{title}</h2>
         </Link>
-        <div className="mt-2 flex items-center">
-          <Link href={github} target="_blank" className="w-10">
-            <GithubIcon />
-          </Link>
+        <div className="mt-2 flex items-center justify-between w-full">
           <Link
             href={link}
             target="_blank"
-            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold"
+            className="text-lg font-semibold underline"
           >
             Visit
+          </Link>
+          <Link href={github} target="_blank" className="w-10">
+            <GithubIcon />
           </Link>
         </div>
       </div>
@@ -96,7 +99,7 @@ const projects = () => {
             className="mb-16"
             text={"Imagination Trumps Knowledge!"}
           />
-          <div className="grid grid-cols-12 gap-24">
+          <div className="grid grid-cols-12 gap-24 gap-y-32">
             <div className="col-span-12">
               <FeatureProject
                 title="React Portfolio Website"
@@ -109,18 +112,65 @@ page transitions, cool background effects, unique design and it is mobile respon
               />
             </div>
             <div className="col-span-6">
+              {" "}
               <Project
                 title="React Portfolio Website"
+                summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth 
+page transitions, cool background effects, unique design and it is mobile responsive"
                 link="/"
                 github="/"
                 type="Featured Project"
                 img={project2}
               />
             </div>
-            <div className="col-span-6">Project 2</div>
-            <div className="col-span-12">Featured Project</div>
-            <div className="col-span-6">Project 3</div>
-            <div className="col-span-6">Project 4</div>
+            <div className="col-span-6">
+              {" "}
+              <Project
+                title="React Portfolio Website"
+                summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth 
+page transitions, cool background effects, unique design and it is mobile responsive"
+                link="/"
+                github="/"
+                type="Featured Project"
+                img={project2}
+              />
+            </div>
+            <div className="col-span-12">
+              {" "}
+              <FeatureProject
+                title="React Portfolio Website"
+                summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth 
+page transitions, cool background effects, unique design and it is mobile responsive"
+                link="/"
+                github="/"
+                type="Featured Project"
+                img={project2}
+              />
+            </div>
+            <div className="col-span-6">
+              {" "}
+              <Project
+                title="React Portfolio Website"
+                summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth 
+page transitions, cool background effects, unique design and it is mobile responsive"
+                link="/"
+                github="/"
+                type="Featured Project"
+                img={project2}
+              />
+            </div>
+            <div className="col-span-6">
+              {" "}
+              <Project
+                title="React Portfolio Website"
+                summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth 
+page transitions, cool background effects, unique design and it is mobile responsive"
+                link="/"
+                github="/"
+                type="Featured Project"
+                img={project2}
+              />
+            </div>
           </div>
         </Layout>
       </main>
