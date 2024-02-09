@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="w-full border-t-2 border-solid border-dark font-medium text-lg">
+    <footer className="w-full border-t-2 border-solid border-dark font-medium text-lg dark:text-light dark:border-light">
       <Layout className="py-8 flex items-center justify-between">
         <span title={new Date().toLocaleDateString()}>
           {new Date().getFullYear()} &copy; All Rights Reserved
@@ -12,7 +12,11 @@ const Footer = () => {
         <div className="flex items-center ">
           {" "}
           Build with{" "}
-          <span className="text-primary text-2xl px-1"> &#9825; </span>Sri
+          <span className="text-primary dark:text-primaryDark text-2xl px-1">
+            {" "}
+            &#9825;{" "}
+          </span>
+          Sri
         </div>
         <Link href="/">Say Hello</Link>
       </Layout>

@@ -20,7 +20,7 @@ export default function Home() {
         <title>Sridhar Kumar</title>
         <meta name="description" content="Sridhar Kumar's Portfolio" />
       </Head>
-      <main className="flex items-center text-dark w-full min-h-screen">
+      <main className="flex items-center text-dark w-full min-h-screen dark:text-light">
         <Layout className="pt-0">
           <div className="flex items-center justify-between w-full">
             <div className="w-1/2">
@@ -39,7 +39,7 @@ export default function Home() {
               </p>
               <div className="flex gap-5 items-center self-start mt-2">
                 <Link
-                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark transition-all"
+                  className="flex items-center bg-dark text-light dark:bg-light dark:text-dark p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark  hover:dark:bg-dark hover:dark:text-light border-2 border-solid border-transparent hover:border-dark hover:dark:border-light transition-all"
                   // download={true}
                   href="/dummy.pdf"
                   target="_blank"
@@ -47,7 +47,7 @@ export default function Home() {
                   Resume <LinkArrow className={"w-6 ml-1"} />
                 </Link>
                 <Link
-                  className="ml-4 text-lg font-medium capitalize text-dark underline hover:underline-offset-2"
+                  className="ml-4 text-lg font-medium capitalize dark:text-light text-dark underline hover:underline-offset-2"
                   href="mailto:sridharkumar5303@gmail.com"
                   target="_blank"
                 >
