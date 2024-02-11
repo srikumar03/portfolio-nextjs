@@ -1,7 +1,12 @@
+import Transition from "@/components/Transition";
 import React from "react";
-
 const contact = () => {
-  return <div>contact</div>;
+  return (
+    <div>
+      <Transition />
+      contact
+    </div>
+  );
 };
 
 export default contact;

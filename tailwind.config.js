@@ -37,12 +37,13 @@ module.exports = {
       // => @media (max-width: 1279px) { ... }
       lg: { max: "1023px" },
       // => @media (max-width: 1023px) { ... }
-      md: { max: "767px" },
+      md: { max: "768px" },
       // => @media (max-width: 767px) { ... }
       sm: { max: "639px" },
       // => @media (max-width: 639px) { ... }
       xs: { max: "479px" },
       // => @media (max-width: 479px) { ... }
+      xxs: { max: "352px" },
     },
   },
   plugins: [],
