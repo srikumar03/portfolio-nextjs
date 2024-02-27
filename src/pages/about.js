@@ -53,25 +53,25 @@ const about = () => {
                 ░ Biography
               </h2>
               <p className="font-medium text-justify text-sm">
-                Hi! I am Sridhar and glad that you're here to read about me. I
+                Hi! I am Sridhar and glad that you are here to read about me. I
                 was an average student in my school, not all the last bench
                 students will be knowledge less. These are the universal truths.
                 But Now, think about the middle bench students? They will be the
                 guys who had stuff to come forward but never reached their goal
                 in time, still they will never go back and stop their struggle.
-                I’m one among the middle bench student who migrated from the
+                I am one among the middle bench student who migrated from the
                 last bench to the middle bench during the school days and now
-                even on my college days.Currently I'm Pursuing M.Sc Software
+                even on my college days.Currently I am Pursuing M.Sc Software
                 Systems in Kongu Engineering College, Perundurai, my tech
                 journey began in 7th Standard, evolving from hardware
                 experiments to web technologies. In college, I honed my logical
                 and programming skills, exploring new technologies.
               </p>
               <p className="font-medium text-justify my-2 text-sm">
-                Beyond academics, I'm passionate about surfing intriguing topics
-                online. Music is a significant part of my life—I enjoy listening
-                and occasionally dabble in music production. Exploring diverse
-                interests, I find joy in continuous self-improvement and
+                Beyond academics, I am passionate about surfing intriguing
+                topics online. Music is a significant part of my life—I enjoy
+                listening and occasionally dabble in music production. Exploring
+                diverse interests, I find joy in continuous self-improvement and
                 learning, both in technology and beyond{" "}
               </p>
             </div>
@@ -83,7 +83,7 @@ const about = () => {
               <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
               <Image
                 src={profilepic}
-                alt="sri's Pic"
+                alt="sri as Pic"
                 className="w-full h-auto rounded-2xl"
                 priority
                 sizes="(max-Width:768px) 100vw, (max-width:1200px) 50vw, 33vw"
