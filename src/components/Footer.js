@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "./Layout";
 import Link from "next/link";
+import { WhatsApp } from "./Icons";
 
 const Footer = () => {
   return (
@@ -18,7 +19,12 @@ const Footer = () => {
           </span>
           Sri
         </div>
-        <Link href="/">Say Hello</Link>
+        <Link href="https://wa.link/s6pj7z" target="_blank">
+          <span className="flex">
+            Say Hello &nbsp;
+            <WhatsApp className={" bg-none "} />
+          </span>
+        </Link>
       </Layout>
     </footer>
   );
