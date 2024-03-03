@@ -51,32 +51,11 @@ const Exp = () => {
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
             position="Intern"
-            company="Facebook"
+            company="Idot"
             companyLink="https:\\idotinc.in"
-            time=" 2021 "
-            address=" Menlo Park, CA"
-            work="Worked on a team responsible for developing a new mobile app feature that allowed users to create and 
-share short-form video content, including designing and implementing a new user interface and developing 
-the backend infrastructure to support the feature"
-          />
-          <Details
-            position="Intern"
-            company="Facebook"
-            companyLink="https:\\idotinc.in"
-            time=" 2021 "
-            address=" Menlo Park, CA"
-            work="Worked on a team responsible for developing a new mobile app feature that allowed users to create and 
-share short-form video content, including designing and implementing a new user interface and developing 
-the backend infrastructure to support the feature"
-          />
-          <Details
-            position="Intern"
-            company="Facebook"
-            companyLink="https:\\idotinc.in"
-            time=" 2021 "
-            address=" Menlo Park, CA"
-            work="Worked on a team responsible for developing a new mobile app feature that allowed users to create and 
-share short-form video content, including designing and implementing a new user interface and developing 
+            time=" 2022-2024 "
+            address=" Perundurai, Erode"
+            work="Worked on a team responsible for developing a new Web app feature, including designing and implementing a new user interface and developing 
 the backend infrastructure to support the feature"
           />
         </ul>

@@ -43,18 +43,21 @@ const Education = () => {
 
         <ul className="w-full flex flex-col items-start justify-between ml-4  xs:ml-2">
           <Details
-            type="Bachelor Of Science In Computer Science"
-            time="2016-2020"
-            place="Massachusetts Institute Of Technology (MIT)"
+            type="Master Of Science in Software Systems (Integrated)"
+            time="2020-2025"
+            place="Kongu Engineering College (KEC),Perundurai , Erode"
             into="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
             Intelligence"
           />
           <Details
-            type="Bachelor Of Science In Computer Science"
-            time="2016-2020"
-            place="Massachusetts Institute Of Technology (MIT)"
-            into="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-            Intelligence"
+            type="High School Certificate"
+            time="2019-2020"
+            place="Sri Sankara Vidhyasala Matric Higher Secondary School,Sivagiri"
+          />
+          <Details
+            type="Secondary School Leaving Certificate"
+            time="2017-2018"
+            place="Sri Sankara Vidhyasala Matric Higher Secondary School,Sivagiri"
           />
         </ul>
       </div>
