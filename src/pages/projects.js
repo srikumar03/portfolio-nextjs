@@ -143,10 +143,10 @@ const projects = () => {
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeatureProject
-                title="React Portfolio Website"
-                summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth 
+                title="NextJS Portfolio Website"
+                summary="A professional portfolio website using NextJS, Framer-motion, and Tailwind. It has smooth 
 page transitions, cool background effects, unique design and it is mobile responsive"
-                link="/"
+                link="https://sridharkumar.netlify.app/"
                 github="/"
                 type="Featured Project"
                 img={project2}
