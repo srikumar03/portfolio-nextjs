@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 const useThemeSwitcher = () => {
-  const preferDarkQuery = "(prefer-color-scheme: dark)";
+  const preferDarkQuery = "(prefer-color-scheme: light)";
   const [mode, setMode] = useState("");
 
   useEffect(() => {
@@ -18,12 +18,15 @@ const useThemeSwitcher = () => {
           document.documentElement.classList.remove("dark");
         }
       } else {
+        // Set default theme to "light" if no theme is stored in local storage
         let check = mediaQuery.matches ? "dark" : "light";
         if (check === "dark") {
           document.documentElement.classList.add("dark");
         } else {
           document.documentElement.classList.remove("dark");
         }
+        setMode("light"); // Set mode to "light" by default
+        window.localStorage.setItem("theme", "light"); // Store "light" in local storage
       }
     };
 
