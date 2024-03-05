@@ -170,6 +170,26 @@ const NavBar = () => {
           animate={{ scale: 1, opacity: 1 }}
           className="min-w-[70vw] flex flex-col justify-between items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32"
         >
+          <button
+            className="sm:hidden lg:block absolute left-5 top-7"
+            onClick={handleClick}
+          >
+            <span
+              className={`bg-light dark:bg-dark block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
+                isOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"
+              }`}
+            ></span>
+            <span
+              className={`bg-light dark:bg-dark block transition-all duration-100 ease-out h-0.5 w-6 rounded-sm my-0.5 ${
+                isOpen ? "opacity-0" : "opacity-100"
+              }`}
+            ></span>
+            <span
+              className={`bg-light dark:bg-dark block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm  ${
+                isOpen ? "-rotate-45 -translate-y-1" : "translate-y-0.5"
+              }`}
+            ></span>
+          </button>
           <nav className="flex flex-col items-center justify-center">
             <CustomMobileLink toggle={handleClick} href="/" title="Home" />
             <CustomMobileLink
