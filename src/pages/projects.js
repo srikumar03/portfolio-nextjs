@@ -131,7 +131,7 @@ const projects = () => {
     <>
       <Head>
         <title>Sridhar | Project Page</title>
-        <meta name="bla bla bla" content="bla bla..." />
+        <meta name="Sridhar project" content="Sridhar's Project Page..." />
       </Head>
       <Transition />
       <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">

@@ -12,12 +12,12 @@ const Footer = () => {
         </span>
         <div className="flex items-center lg:py-2">
           {" "}
-          Build with{" "}
-          <span className="text-red-600 dark:text-primaryDark text-2xl px-1">
+          Build by{" "}
+          <span className="text-red-600 dark:text-primaryDark px-1">
             {" "}
-            &#9829;{" "}
+            {/* &#9829;{" "} */}
+            Sridhar Kumar
           </span>
-          Sri
         </div>
         <Link href="https://wa.link/s6pj7z" target="_blank">
           <span className="flex">
