@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
 import {
+  Facebook,
   GithubIcon,
   GmailIcon,
   InstaIcon,
@@ -141,6 +142,16 @@ const NavBar = () => {
             <InstaIcon />
           </motion.a>
           <motion.a
+            className="w-6 mx-3 xs:mx-1"
+            whileHover={{ rotate: -9, y: -2 }}
+            whileTap={{ scale: 0.9 }}
+            href="/"
+            target="_blank"
+          >
+            <Facebook />
+          </motion.a>
+
+          <motion.a
             className="w-6 mx-3"
             whileHover={{ rotate: -9, y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -274,7 +285,7 @@ const NavBar = () => {
         </motion.div>
       ) : null}
 
-      <div className="absolute left-[48%] lg:left-[44%] md:left-[41.5%] sm:left-[40%] xs:left-[35%] xxs:left-[30%] top-2 translate-x-[50%]">
+      <div className="absolute left-[48%] lgg:left-[44%] lggg:left-[45%] lg:left-[44%] md:left-[41.5%] sm:left-[40%] xs:left-[35%] xxs:left-[30%] top-2 translate-x-[50%]">
         <Logo />
       </div>
     </header>
