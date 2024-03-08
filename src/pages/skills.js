@@ -47,14 +47,18 @@ const skills = () => {
     <>
       <Head>
         <title>Sridhar | Skills</title>
-        <meta name="bla bla bla" content="bla bla..." />
+        <meta name="Sridhar | Skills" content="Sridhar | Skills..." />
       </Head>
       <Transition />
 
       <main className="w-full mb-1 flex flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
+          <AnimatedText
+            className="mb-16 z-10 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
+            text={"Skills Unleashed, Expertise Evolved!"}
+          />
           <Particles
-            className="z-0"
+            className="-z-50"
             id="tsparticles"
             init={particlesInit}
             loaded={particlesLoaded}
@@ -352,7 +356,7 @@ const skills = () => {
                     mode: "delete",
                     value: 0,
                   },
-                  value: 80,
+                  value: 20, // Number of Pulligal
                 },
                 opacity: {
                   value: 0.5,
@@ -562,11 +566,7 @@ const skills = () => {
               },
             }}
           />
-          <AnimatedText
-            className="mb-16 z-10 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
-            text={"Skills Unleashed, Expertise Evolved!"}
-          />
-          <div className="mb-10 border p-5 rounded-md border-slate-300 backdrop-blur-sm shadow-slate-200 shadow-md">
+          <div className="mb-10 border p-5 rounded-md border-slate-300 backdrop-blur-sm shadow-slate-200 dark:shadow-slate-700 shadow-md">
             <h2 className="mb-4 underline-offset-2 underline text-lg font-bold uppercase text-dark/75 dark:text-light/70 flex">
               Frontend Languages
             </h2>
@@ -701,7 +701,7 @@ const skills = () => {
             </div>
           </div>
 
-          <div className="mb-10 border p-5 rounded-md border-slate-300 backdrop-blur-sm shadow-slate-200 shadow-md">
+          <div className="mb-10 border p-5 rounded-md border-slate-300 backdrop-blur-sm shadow-slate-200 dark:shadow-slate-700 shadow-md">
             <h2 className="mb-4 underline-offset-2 underline text-lg font-bold uppercase text-dark/75 dark:text-light/70 flex">
               Backend Languages
             </h2>
@@ -794,7 +794,7 @@ const skills = () => {
               </motion.div>
             </div>
           </div>
-          <div className="mb-10 border p-5 rounded-md border-slate-300 backdrop-blur-sm shadow-slate-200 shadow-md">
+          <div className="mb-10 border p-5 rounded-md border-slate-300 backdrop-blur-sm shadow-slate-200 dark:shadow-slate-700 shadow-md">
             <h2 className="mb-4 underline-offset-2 underline text-lg font-bold uppercase text-dark/75 dark:text-light/70 flex">
               Programming Languages
             </h2>
@@ -860,7 +860,7 @@ const skills = () => {
               </motion.div>
             </div>
           </div>
-          <div className=" border p-5 rounded-md border-slate-300 backdrop-blur-sm shadow-slate-200 shadow-md">
+          <div className=" border p-5 rounded-md border-slate-300 backdrop-blur-sm shadow-slate-200 dark:shadow-slate-700 shadow-md">
             <h2 className="mb-4 underline-offset-2 underline text-lg font-bold uppercase text-dark/75 dark:text-light/70 flex">
               Tool Stack
             </h2>

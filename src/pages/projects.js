@@ -5,7 +5,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import { GithubIcon } from "@/components/Icons";
-import project2 from "../../public/images/projects/crypto-screener-cover-image.jpg";
+import project2 from "../../public/images/projects/kec.png";
 import { motion } from "framer-motion";
 import Transition from "@/components/Transition";
 
@@ -143,12 +143,11 @@ const projects = () => {
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeatureProject
-                title="NextJS Portfolio Website"
-                summary="A professional portfolio website using NextJS, Framer-motion, and Tailwind. It has smooth 
-page transitions, cool background effects, unique design and it is mobile responsive"
-                link="https://sridharkumar.netlify.app/"
-                github="/"
-                type="Featured Project"
+                title="Kongu Engineering College (KEC) Website"
+                summary="Revamp the KEC website to enhance its functionality, aesthetics, and user experience. Focus on improving navigation, updating content, and implementing modern design elements. Ensure the website meets accessibility standards and is user-friendly"
+                link="https://sri-kec.netlify.app/"
+                github="https://github.com/srikumar03/KECSite"
+                type="Web Project"
                 img={project2}
               />
             </div>
