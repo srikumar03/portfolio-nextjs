@@ -109,7 +109,7 @@ const NavBar = () => {
             className="w-6 mr-3"
             whileHover={{ rotate: -9, y: -2 }}
             whileTap={{ scale: 0.9 }}
-            href="/"
+            href="https://github.com/srikumar03/"
             target="_blank"
           >
             <GithubIcon />
@@ -118,7 +118,7 @@ const NavBar = () => {
             className="w-6 mx-3 dark:text-dark text-light"
             whileHover={{ rotate: -9, y: -2 }}
             whileTap={{ scale: 0.9 }}
-            href="/"
+            href="https://www.linkedin.com/in/sridharofficial/"
             target="_blank"
           >
             <LinkedInIcon />
@@ -127,7 +127,7 @@ const NavBar = () => {
             className="w-6 mx-3"
             whileHover={{ rotate: -9, y: -2 }}
             whileTap={{ scale: 0.9 }}
-            href="/"
+            href="https://twitter.com/sri_369_"
             target="_blank"
           >
             <TwitterIcon />
@@ -136,7 +136,7 @@ const NavBar = () => {
             className="w-6 mx-3 "
             whileHover={{ rotate: -9, y: -2 }}
             whileTap={{ scale: 0.9 }}
-            href="/"
+            href="https://www.instagram.com/sri_369_/"
             target="_blank"
           >
             <InstaIcon />
@@ -155,7 +155,7 @@ const NavBar = () => {
             className="w-6 mx-3"
             whileHover={{ rotate: -9, y: -2 }}
             whileTap={{ scale: 0.9 }}
-            href="/"
+            href="mailto:sridharkumar5303@gmail.com"
             target="_blank"
           >
             <GmailIcon />
@@ -225,7 +225,7 @@ const NavBar = () => {
               className="w-6 mr-3 bg-light rounded-full dark:bg-dark xs:mx-1"
               whileHover={{ rotate: -9, y: -2 }}
               whileTap={{ scale: 0.9 }}
-              href="/"
+              href="https://github.com/srikumar03/"
               target="_blank"
             >
               <GithubIcon />
@@ -234,7 +234,7 @@ const NavBar = () => {
               className="w-6 mx-3 text-light xs:mx-1"
               whileHover={{ rotate: -9, y: -2 }}
               whileTap={{ scale: 0.9 }}
-              href="/"
+              href="https://www.linkedin.com/in/sridharofficial/"
               target="_blank"
             >
               <LinkedInIcon />
@@ -243,7 +243,7 @@ const NavBar = () => {
               className="w-6 mx-3 text-light dark:text-dark xs:mx-1"
               whileHover={{ rotate: -9, y: -2 }}
               whileTap={{ scale: 0.9 }}
-              href="/"
+              href="https://twitter.com/sri_369_"
               target="_blank"
             >
               <TwitterIcon />
@@ -252,7 +252,7 @@ const NavBar = () => {
               className="w-6 mx-3 xs:mx-1"
               whileHover={{ rotate: -9, y: -2 }}
               whileTap={{ scale: 0.9 }}
-              href="/"
+              href="https://www.instagram.com/sri_369_/"
               target="_blank"
             >
               <InstaIconMob />
@@ -262,7 +262,7 @@ const NavBar = () => {
               className="w-6 mx-3 xs:mx-1"
               whileHover={{ rotate: -9, y: -2 }}
               whileTap={{ scale: 0.9 }}
-              href="/"
+              href="mailto:sridharkumar5303@gmail.com"
               target="_blank"
             >
               <GmailIcon />

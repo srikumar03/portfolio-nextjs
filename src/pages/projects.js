@@ -1,11 +1,11 @@
 import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
-import React from "react";
+import React, { useRef } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import { FigmaIcon, GithubIcon } from "@/components/Icons";
-import { motion } from "framer-motion";
+import { motion, useMotionValue } from "framer-motion";
 import Transition from "@/components/Transition";
 // img import
 import kecsite from "../../public/images/projects/kec.png";
@@ -14,6 +14,7 @@ import pyGame from "../../public/images/projects/pyGame.png";
 import inventoryweb from "../../public/images/projects/inventoryweb.png";
 import cocopure from "../../public/images/projects/cocopure.png";
 import mescia from "../../public/images/projects/mescia23.png";
+import ps from "../../public/images/projects/ps.png";
 
 const FramerImage = motion(Image);
 
@@ -101,7 +102,7 @@ const Project = ({ type, title, img, link, github, icon }) => {
       <div className="w-full flex flex-col items-start justify-between">
         <span
           className="text-primary dark:text-primaryDark font-medium text-xl
-         lg:text-lg md:text-base"
+         lg:text-lg md:text-base mt-2"
         >
           {type}
         </span>
@@ -152,7 +153,7 @@ const FigmaProject = ({ type, title, img, link, github }) => {
       <div className="w-full flex flex-col items-start justify-between">
         <span
           className="text-primary dark:text-primaryDark font-medium text-xl
-         lg:text-lg md:text-base"
+         lg:text-lg md:text-base mt-2"
         >
           {type}
         </span>
@@ -174,11 +175,69 @@ const FigmaProject = ({ type, title, img, link, github }) => {
             Visit
           </Link>
           <Link href={github} target="_blank" className="w-9 md:w-6">
-            <FigmaIcon />
+            <FigmaIcon className="dark:bg-white dark:rounded-xl dark:p-[1px]" />
           </Link>
         </div>
       </div>
     </article>
+  );
+};
+
+const DesignProject = ({ img, title, date, link }) => {
+  return (
+    <>
+      <motion.li
+        initial={{ y: 200 }}
+        whileInView={{ y: 0, transition: { duration: 0.5, ease: "easeInOut" } }}
+        viewport={{ once: true }}
+        className="relative w-full p-4 my-4 rounded-xl flex items-center justify-between bg-light dark:bg-black
+         dark:text-light text-dark border-solid border-dark dark:border-light 
+         border border-r-8 border-b-8 sm:flex-col"
+      >
+        <MovingImg title={title} img={img} link={link} />
+        <span className="text-primary dark:text-primaryDark pl-4 text-xl xs:text-base sm:m-2 text-left sm:pl-0">
+          {date}
+        </span>
+      </motion.li>
+    </>
+  );
+};
+const MovingImg = ({ title, img, link }) => {
+  const x = useMotionValue(0);
+  const y = useMotionValue(0);
+  const imgRef = useRef(null);
+
+  function handleMouse(event) {
+    imgRef.current.style.display = "inline-block";
+    x.set(event.pageX);
+    y.set(-10);
+  }
+  function handleMouseLeave(event) {
+    imgRef.current.style.display = "none";
+    x.set(0);
+    y.set(0);
+  }
+
+  return (
+    <Link
+      href={link}
+      target="_blank"
+      onMouseMove={handleMouse}
+      onMouseLeave={handleMouseLeave}
+    >
+      <h2 className="capitalize w-full text-left text-4xl font-bold lg:text-2xl underline hover:underline-offset-1">
+        {title}
+      </h2>
+      <FramerImage
+        style={{ x: x, y: y }}
+        src={img}
+        alt={title}
+        ref={imgRef}
+        className="z-10 w-96 h-auto hidden absolute rounded-lg"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1, transition: { duration: 0.2 } }}
+      />
+    </Link>
   );
 };
 
@@ -263,6 +322,16 @@ page transitions, cool background effects, unique design and it is mobile respon
                 github="https://github.com/srikumar03/MESCIA_2023"
                 type="Web Project"
                 img={mescia}
+              />
+            </div>
+
+            <div className="col-span-12">
+              {" "}
+              <DesignProject
+                title="Some Graphic Compositions"
+                date="Digital Creations"
+                link="https://drive.google.com/drive/u/6/folders/1JfJbk1GRfjeOdV8gnw1gUZX_xKAlNyjg"
+                img={ps}
               />
             </div>
           </div>
