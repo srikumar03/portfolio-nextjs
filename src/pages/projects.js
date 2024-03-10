@@ -4,10 +4,16 @@ import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import { GithubIcon } from "@/components/Icons";
-import project2 from "../../public/images/projects/kec.png";
+import { FigmaIcon, GithubIcon } from "@/components/Icons";
 import { motion } from "framer-motion";
 import Transition from "@/components/Transition";
+// img import
+import kecsite from "../../public/images/projects/kec.png";
+import inventory_Figma from "../../public/images/projects/inventory_Figma.png";
+import pyGame from "../../public/images/projects/pyGame.png";
+import inventoryweb from "../../public/images/projects/inventoryweb.png";
+import cocopure from "../../public/images/projects/cocopure.png";
+import mescia from "../../public/images/projects/mescia23.png";
 
 const FramerImage = motion(Image);
 
@@ -73,8 +79,58 @@ const FeatureProject = ({ type, title, summary, img, link, github }) => {
     </article>
   );
 };
+const Project = ({ type, title, img, link, github, icon }) => {
+  return (
+    <article className="relative w-full flex flex-col items-center justify-between rounded-3xl border border-solid border-dark bg-light p-6 dark:bg-dark dark:border-light xs:p-4">
+      <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]" />
+      <Link
+        href={link}
+        target="_blank"
+        className="w-full cursor-pointer overflow-hidden rounded-lg"
+      >
+        <FramerImage
+          src={img}
+          alt={title}
+          className="w-full h-auto"
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.2 }}
+          priority
+        />
+      </Link>
 
-const Project = ({ type, title, img, link, github }) => {
+      <div className="w-full flex flex-col items-start justify-between">
+        <span
+          className="text-primary dark:text-primaryDark font-medium text-xl
+         lg:text-lg md:text-base"
+        >
+          {type}
+        </span>
+        <Link
+          href={link}
+          target="_blank"
+          className="hover:underline underline-offset-1"
+        >
+          <h2 className="my-2 w-full text-left text-4xl font-bold lg:text-2xl">
+            {title}
+          </h2>
+        </Link>
+        <div className="mt-2 flex items-center justify-between w-full">
+          <Link
+            href={link}
+            target="_blank"
+            className={`text-lg font-semibold underline md:text-base ${icon}`}
+          >
+            Visit
+          </Link>
+          <Link href={github} target="_blank" className="w-9 md:w-6">
+            <GithubIcon />
+          </Link>
+        </div>
+      </div>
+    </article>
+  );
+};
+const FigmaProject = ({ type, title, img, link, github }) => {
   return (
     <article className="relative w-full flex flex-col items-center justify-between rounded-3xl border border-solid border-dark bg-light p-6 dark:bg-dark dark:border-light xs:p-4">
       <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]" />
@@ -118,7 +174,7 @@ const Project = ({ type, title, img, link, github }) => {
             Visit
           </Link>
           <Link href={github} target="_blank" className="w-9 md:w-6">
-            <GithubIcon />
+            <FigmaIcon />
           </Link>
         </div>
       </div>
@@ -144,71 +200,69 @@ const projects = () => {
             <div className="col-span-12">
               <FeatureProject
                 title="Kongu Engineering College (KEC) Website"
-                summary="Revamp the KEC website to enhance its functionality, aesthetics, and user experience. Focus on improving navigation, updating content, and implementing modern design elements. Ensure the website meets accessibility standards and is user-friendly"
+                summary="Revamp the KEC website to enhance its functionality, 
+                aesthetics, and user experience. Focus on improving navigation, 
+                updating content, and implementing modern design elements."
                 link="https://sri-kec.netlify.app/"
                 github="https://github.com/srikumar03/KECSite"
                 type="Web Project"
-                img={project2}
+                img={kecsite}
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              {" "}
+              <FigmaProject
+                title="UI for Inventory Management Application"
+                link="https://www.figma.com/proto/ZY2YixnkVDNGsshOkK0CFL/Innoventry-Sri-(Community)?page-id=0%3A1&type=design&node-id=2-2&viewport=489%2C419%2C0.25&t=4IVPg3HFy7B9N7S6-1&scaling=scale-down&starting-point-node-id=2%3A2&show-proto-sidebar=1&mode=design"
+                github="https://www.figma.com/file/ZY2YixnkVDNGsshOkK0CFL/Innoventry-Sri-(Community)?type=design&node-id=0%3A1&mode=design&t=QGUNwwycWi6K89q5-1"
+                type="Figma Design"
+                img={inventory_Figma}
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               {" "}
               <Project
-                title="React Portfolio Website"
+                title="Rock Paper Scissor Game using Python"
                 summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth 
 page transitions, cool background effects, unique design and it is mobile responsive"
                 link="/"
-                github="/"
-                type="Featured Project"
-                img={project2}
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              {" "}
-              <Project
-                title="React Portfolio Website"
-                summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth 
-page transitions, cool background effects, unique design and it is mobile responsive"
-                link="/"
-                github="/"
-                type="Featured Project"
-                img={project2}
+                github="https://github.com/srikumar03/Rock_Paper_Scissor"
+                type="Python Project"
+                img={pyGame}
+                icon={"hidden"}
               />
             </div>
             <div className="col-span-12">
               {" "}
               <FeatureProject
-                title="React Portfolio Website"
-                summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth 
-page transitions, cool background effects, unique design and it is mobile responsive"
-                link="/"
-                github="/"
-                type="Featured Project"
-                img={project2}
+                title="Inventory Management System"
+                summary="PHP and MySQL-based Inventory Management System for streamlined control, real-time tracking, and secure data storage, ensuring efficient stock and resource management."
+                link="https://sri-inventory.000webhostapp.com/"
+                github="https://github.com/srikumar03/Inventory_app"
+                type="Web Project"
+                img={inventoryweb}
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               {" "}
               <Project
-                title="React Portfolio Website"
-                summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth 
-page transitions, cool background effects, unique design and it is mobile responsive"
-                link="/"
-                github="/"
-                type="Featured Project"
-                img={project2}
+                title="Cocopure WebPage"
+                link="https://srikumar03.github.io/cocopure/"
+                github="https://github.com/srikumar03/cocopure"
+                type="web Project"
+                img={cocopure}
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               {" "}
               <Project
-                title="React Portfolio Website"
+                title="MeSCia Event Website "
                 summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth 
 page transitions, cool background effects, unique design and it is mobile responsive"
-                link="/"
-                github="/"
-                type="Featured Project"
-                img={project2}
+                link="https://mescia2k23.netlify.app/"
+                github="https://github.com/srikumar03/MESCIA_2023"
+                type="Web Project"
+                img={mescia}
               />
             </div>
           </div>

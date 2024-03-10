@@ -10,7 +10,7 @@ import Transition from "@/components/Transition";
 const Project = ({ type }) => {
   return (
     <article className="relative w-full flex flex-col items-center justify-between rounded-md border border-solid border-dark bg-light p-1 dark:bg-dark dark:border-light xs:p-4">
-      <div className="absolute top-0 -right-[3px] -z-10 w-[99%] h-[100%] rounded-md bg-dark dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]" />
+      <div className="absolute top-0 -right-[3px] -z-10 w-[99%] h-[100%] rounded-md bg-dark dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-lg xs:-right-1" />
 
       <div className="w-full flex flex-col items-start justify-between">
         <div className="flex items-center justify-center w-full">
