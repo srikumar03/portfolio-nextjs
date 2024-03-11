@@ -48,7 +48,7 @@ const about = () => {
             className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
           />
           <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
-            <div className="col-span-3 flex flex-col items-start justify-start md:col-span-8 md:order-2 xl:col-span-4">
+            <div className="col-span-3 flex flex-col items-start justify-start mdd:col-span-8 md:order-1 xl:col-span-4">
               {" "}
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/70">
                 ░ Biography
@@ -79,7 +79,7 @@ const about = () => {
 
             <div
               className="col-span-3 flex flex-col items-center justify-center relative h-max rounded-2xl border-2 border-solid
-             border-dark bg-light dark:border-light dark:bg-dark p-8 xl:col-span-4 md:order-1 md:col-span-8"
+             border-dark bg-light dark:border-light dark:bg-dark p-8 xl:col-span-4 md:order-2 mdd:col-span-8"
             >
               <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
               <Image
