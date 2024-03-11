@@ -74,7 +74,7 @@ const NavBar = () => {
   };
 
   return (
-    <header className="w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-8 lg:bg-inherit">
+    <header className="w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-8">
       <button
         className="hidden lg:flex flex-col justify-center items-center"
         onClick={handleClick}
@@ -145,7 +145,7 @@ const NavBar = () => {
             className="w-6 mx-3 xs:mx-1"
             whileHover={{ rotate: -9, y: -2 }}
             whileTap={{ scale: 0.9 }}
-            href="/"
+            href="https://www.facebook.com/ksridhar.ksridhar.505?mibextid=ZbWKwL"
             target="_blank"
           >
             <Facebook />

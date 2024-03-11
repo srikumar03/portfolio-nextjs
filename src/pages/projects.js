@@ -271,7 +271,7 @@ const projects = () => {
             <div className="col-span-6 sm:col-span-12">
               {" "}
               <FigmaProject
-                title="UI for Inventory Management Application"
+                title="UI for Inventory App"
                 link="https://www.figma.com/proto/ZY2YixnkVDNGsshOkK0CFL/Innoventry-Sri-(Community)?page-id=0%3A1&type=design&node-id=2-2&viewport=489%2C419%2C0.25&t=4IVPg3HFy7B9N7S6-1&scaling=scale-down&starting-point-node-id=2%3A2&show-proto-sidebar=1&mode=design"
                 github="https://www.figma.com/file/ZY2YixnkVDNGsshOkK0CFL/Innoventry-Sri-(Community)?type=design&node-id=0%3A1&mode=design&t=QGUNwwycWi6K89q5-1"
                 type="Figma Design"
@@ -281,14 +281,13 @@ const projects = () => {
             <div className="col-span-6 sm:col-span-12">
               {" "}
               <Project
-                title="Rock Paper Scissor Game using Python"
+                title="MeSCia Event Website "
                 summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth 
 page transitions, cool background effects, unique design and it is mobile responsive"
-                link="/"
-                github="https://github.com/srikumar03/Rock_Paper_Scissor"
-                type="Python Project"
-                img={pyGame}
-                icon={"hidden"}
+                link="https://mescia2k23.netlify.app/"
+                github="https://github.com/srikumar03/MESCIA_2023"
+                type="Web Project"
+                img={mescia}
               />
             </div>
             <div className="col-span-12">
@@ -315,16 +314,16 @@ page transitions, cool background effects, unique design and it is mobile respon
             <div className="col-span-6 sm:col-span-12">
               {" "}
               <Project
-                title="MeSCia Event Website "
+                title="Rock Paper Scissor Game"
                 summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth 
 page transitions, cool background effects, unique design and it is mobile responsive"
-                link="https://mescia2k23.netlify.app/"
-                github="https://github.com/srikumar03/MESCIA_2023"
-                type="Web Project"
-                img={mescia}
+                link="/"
+                github="https://github.com/srikumar03/Rock_Paper_Scissor"
+                type="Python Project"
+                img={pyGame}
+                icon={"hidden"}
               />
             </div>
-
             <div className="col-span-12">
               {" "}
               <DesignProject
