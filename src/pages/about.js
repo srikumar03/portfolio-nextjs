@@ -4,7 +4,7 @@ import Head from "next/head";
 import Layout from "@/components/Layout";
 import Image from "next/image";
 import profilepic from "../../public/images/profile/Sri_rbg_final.png";
-import sri from "../../public/images/profile/sriii.png";
+import sri from "../../public/images/profile/srii.png";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Exp from "@/components/Exp";
 import Education from "@/components/Education";
