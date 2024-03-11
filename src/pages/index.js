@@ -47,7 +47,7 @@ export default function Home() {
                 <Link
                   className="flex items-center md:p-2 md:px-4 md:text-base bg-dark text-light dark:bg-light dark:text-dark p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark  hover:dark:bg-dark hover:dark:text-light border-2 border-solid border-transparent hover:border-dark hover:dark:border-light transition-all"
                   // download={true}
-                  href="/dummy.pdf"
+                  href="/SRIDHAR's_Resume.pdf"
                   target="_blank"
                 >
                   Resume <LinkArrow className={"w-6 ml-1"} />
