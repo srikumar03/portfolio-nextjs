@@ -4,6 +4,7 @@ import Head from "next/head";
 import Layout from "@/components/Layout";
 import Image from "next/image";
 import profilepic from "../../public/images/profile/Sri_rbg_final.png";
+import sri from "../../public/images/profile/sriii.png";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Exp from "@/components/Exp";
 import Education from "@/components/Education";
@@ -82,7 +83,7 @@ const about = () => {
             >
               <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
               <Image
-                src={profilepic}
+                src={sri}
                 alt="sri as Pic"
                 className="w-full h-auto rounded-2xl"
                 priority
