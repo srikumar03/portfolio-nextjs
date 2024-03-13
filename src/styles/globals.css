@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+::selection {
+  background: #fff701;
+  color: red;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 3.5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #d3d3d3;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  /* border-radius: 50ch 50ch 0 0; */
+  box-shadow: 0 -100vh 0 100vh #464545, 0 0 15px 5px #e6e7e900;
+}
+/***********************ScrollBar*******************************sridhar-Git-update-final*/
