@@ -3,10 +3,15 @@ import { CircularText } from "./Icons";
 import Link from "next/link";
 
 const HireMe = () => {
+  const handleClick = () => {
+    // Handle click event here, e.g., redirect or perform some action
+    window.location.href = "mailto:sridharkumar5303@gmail.com";
+  };
   return (
-    <div className="fixed md:absolute left-4 bottom-4 flex items-center justify-center overflow-hidden md:right-3  sm:right-0 md:left-auto md:top-0 md:bottom-auto">
+    <div className="fixed md:absolute bottom-4 flex items-center justify-center overflow-hidden md:left-3  sm:left-0 md:right-auto md:top-0 md:bottom-auto">
       <div className="w-48 h-auto flex items-center justify-center relative md:w-24">
         <CircularText
+          onClick={handleClick}
           className={"fill-dark dark:fill-light animate-spin-sloww"}
         />
         <Link
