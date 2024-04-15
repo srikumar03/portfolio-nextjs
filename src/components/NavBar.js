@@ -118,7 +118,7 @@ const NavBar = () => {
             className="w-6 mx-3 dark:text-dark text-light"
             whileHover={{ rotate: -9, y: -2 }}
             whileTap={{ scale: 0.9 }}
-            href="https://www.linkedin.com/in/sridharofficial/"
+            href="https://www.linkedin.com/in/srikumar03/"
             target="_blank"
           >
             <LinkedInIcon />
@@ -234,7 +234,7 @@ const NavBar = () => {
               className="w-6 mx-3 text-light xs:mx-1"
               whileHover={{ rotate: -9, y: -2 }}
               whileTap={{ scale: 0.9 }}
-              href="https://www.linkedin.com/in/sridharofficial/"
+              href="https://www.linkedin.com/in/srikumar03/"
               target="_blank"
             >
               <LinkedInIcon />
