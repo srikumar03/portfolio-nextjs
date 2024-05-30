@@ -1,9 +1,17 @@
-import React, { useRef } from "react";
-import { useScroll } from "framer-motion";
-import { motion } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
+import Link from "next/link";
+import { useRef } from "react";
 import LiIcon from "./LiIcon";
 
-const Details = ({ position, company, companyLink, time, address, work }) => {
+const Details = ({
+  position,
+  company,
+  companyLink,
+  time,
+  address,
+  work,
+  pdflink,
+}) => {
   const ref = useRef(null);
   return (
     <li
@@ -13,7 +21,9 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
       <LiIcon referance={ref} />
       <motion.div initial={{ y: 50 }} whileInView={{ y: 0 }}>
         <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">
-          {position}&nbsp;
+          <Link href={pdflink} target="_blank">
+            {position}&nbsp;
+          </Link>
           <a
             href={companyLink}
             target="_blank"
@@ -51,6 +61,7 @@ const Exp = () => {
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
             position="Intern"
+            pdflink="/Idotinc_Intern.pdf"
             company="Idot"
             companyLink="https:\\idotinc.in"
             time=" 2022-2024 "
