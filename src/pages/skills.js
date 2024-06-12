@@ -7,7 +7,7 @@ import Transition from "@/components/Transition";
 
 const skillsData = {
   "Frontend Languages": ["Reactjs", "Nextjs", "Angularjs", "Bootstrap", "Tailwind"],
-  "Backend Languages": ["MySQL", "PHP", "Node.js", "Express.js", "MongoDB", "Firebase"],
+  "Backend Languages": ["MySQL", "PHP", "Node.js", "MongoDB"],
   "Programming Languages": ["Java", "Python"],
   "Tool Stack": ["Figma", "Adobe Photoshop", "Git", "Postman", "UIPath", "Selenium", "Netlify / Vercel"]
 };
