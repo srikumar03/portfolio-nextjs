@@ -8,8 +8,8 @@ import Transition from "@/components/Transition";
 const skillsData = {
   "Frontend Languages": ["HTML5", "CSS3", "Bootstrap", "Tailwind", "JavaScript", "TypeScript", "Reactjs", "Nextjs", "Angularjs"],
   "Backend Languages": ["MySQL", "PHP", "Node.js", "Express.js", "MongoDB", "Firebase"],
-  "Programming Languages": ["C", "C++", "Java", "Python"],
-  "Tool Stack": ["Figma", "Adobe Photoshop", "Git", "Postman", "Docker", "UIPath", "Selenium", "aibucket", "Netlify / Vercel"]
+  "Programming Languages": ["Java", "Python"],
+  "Tool Stack": ["Figma", "Adobe Photoshop", "Git", "Postman", "UIPath", "Selenium", "Netlify / Vercel"]
 };
 
 const Project = ({ type }) => (
