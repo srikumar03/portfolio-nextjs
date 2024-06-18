@@ -1,14 +1,14 @@
-import React, { useEffect, useRef } from "react";
-import AnimatedText from "../components/AnimatedText";
-import Head from "next/head";
-import Layout from "@/components/Layout";
-import Image from "next/image";
-import profilepic from "../../public/images/profile/Sri_rbg_final.png";
-import sri from "../../public/images/profile/srii.png";
-import { useInView, useMotionValue, useSpring } from "framer-motion";
-import Exp from "@/components/Exp";
 import Education from "@/components/Education";
+import Exp from "@/components/Exp";
+import Layout from "@/components/Layout";
 import Transition from "@/components/Transition";
+import { useInView, useMotionValue, useSpring } from "framer-motion";
+import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
+import { useEffect, useRef } from "react";
+import sri from "../../public/images/profile/srii.png";
+import AnimatedText from "../components/AnimatedText";
 const AnimatedNumers = ({ value }) => {
   const ref = useRef(null);
 
@@ -75,6 +75,13 @@ const about = () => {
                 diverse interests, I find joy in continuous self-improvement and
                 learning, both in technology and beyond{" "}
               </p>
+              <Link
+                href="https://www.16personalities.com/"
+                className="underline"
+                target="blank"
+              >
+                16personalities Profile
+              </Link>
             </div>
 
             <div
