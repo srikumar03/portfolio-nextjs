@@ -16,7 +16,7 @@ const Details = ({
   return (
     <li
       ref={ref}
-      className="my-8 first:mt-0 last:mb-0 w-[60%] md:w-[80%] mx-auto flex flex-col items-center justify-between"
+      className="my-8 first:mt-0 w-[60%] md:w-[80%] mx-auto flex flex-col items-left justify-between"
     >
       <LiIcon referance={ref} />
       <motion.div initial={{ y: 50 }} whileInView={{ y: 0 }}>
@@ -60,14 +60,24 @@ const Exp = () => {
 
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
-            position="Intern"
+            position="Full Stack Developer Intern"
+            pdflink="/cartrabbit.pdf"
+            company="Cartrabbit"
+            companyLink="https://cartrabbit.io/"
+            time=" 2024-Present "
+            address="Coimbatore"
+            work="Contributed to SaaS product development with a focus on full-stack capabilities, developed WooCommerce plugins and WordPress add-ons, and resolved customer tickets by providing efficient technical solutions."
+          />
+        </ul>
+        <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
+          <Details
+            position="Front End Developer Intern"
             pdflink="/Idotinc_Intern.pdf"
             company="Idot"
             companyLink="https:\\idotinc.in"
-            time=" 2022-2024 "
+            time=" 2022-2023 "
             address=" Perundurai, Erode"
-            work="Worked on a team responsible for developing a new Web app feature, including designing and implementing a new user interface and developing 
-the backend infrastructure to support the feature"
+            work="Worked on designing and implementing a user interface for a web application, developing backend infrastructure, and enhancing the performance and responsiveness of front-end components for a seamless user experience."
           />
         </ul>
       </div>
