@@ -77,7 +77,7 @@ const Exp = () => {
             companyLink="https:\\idotinc.in"
             time=" 2022-2023 "
             address=" Perundurai, Erode"
-            work="Worked on designing and implementing a user interface for a web application, developing backend infrastructure, and enhancing the performance and responsiveness of front-end components for a seamless user experience."
+            work="Worked on designing and implementing a user interface for a web application and enhancing the performance and responsiveness of front-end components for a seamless user experience."
           />
         </ul>
       </div>
