@@ -64,8 +64,8 @@ const Exp = () => {
             pdflink="/cartrabbit.pdf"
             company="Cartrabbit"
             companyLink="https://cartrabbit.io/"
-            time=" 2024-Present "
-            address="Coimbatore"
+            time=" Jul/2024-Jan/2025 "
+            address="Sitra, Coimbatore"
             work="Contributed to SaaS product development with a focus on full-stack capabilities, developed WooCommerce plugins and WordPress add-ons, and resolved customer tickets by providing efficient technical solutions."
           />
         </ul>
@@ -75,7 +75,7 @@ const Exp = () => {
             pdflink="/Idotinc_Intern.pdf"
             company="Idot"
             companyLink="https:\\idotinc.in"
-            time=" 2022-2023 "
+            time=" Nov/2022-May/2023 "
             address="Perundurai, Erode"
             work="Worked on designing and implementing a user interface for a web application and enhancing the performance and responsiveness of front-end components for a seamless user experience."
           />

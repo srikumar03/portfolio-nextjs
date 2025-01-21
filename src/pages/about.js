@@ -75,13 +75,13 @@ const about = () => {
                 diverse interests, I find joy in continuous self-improvement and
                 learning, both in technology and beyond{" "}
               </p>
-              <Link
+              {/* <Link
                 href="https://www.16personalities.com/"
                 className="underline"
                 target="blank"
               >
                 16personalities Profile
-              </Link>
+              </Link> */}
             </div>
 
             <div
