@@ -9,7 +9,7 @@ const skillsData = {
   "Frontend Languages": [
     "Reactjs",
     "Nextjs",
-    "Angularjs",
+    "Mjml",
     "Bootstrap",
     "Tailwind",
   ],
