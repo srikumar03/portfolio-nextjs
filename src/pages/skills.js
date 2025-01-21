@@ -15,10 +15,11 @@ const skillsData = {
   ],
   "Backend Languages": ["MySQL", "PHP", "Node.js", "MongoDB"],
   "Programming Languages": ["Java", "Python"],
-  "Web Solutions / Content Management": ["Wordpress", "Woocommerce", "Shopify"],
+  "Web Solutions / Content Management": ["Wordpress", "Woocommerce"],
   "Tool Stack": [
     "Figma",
     "Adobe Photoshop",
+    "Adobe Illustrator,",
     "Git",
     "Postman",
     "UIPath",
