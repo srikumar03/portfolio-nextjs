@@ -19,8 +19,8 @@ const skillsData = {
   "Tool Stack": [
     "Figma",
     "Adobe Photoshop",
-    "Adobe Illustrator,",
     "Git",
+    "Adobe Illustrator,",
     "Postman",
     "UIPath",
     "Selenium",
