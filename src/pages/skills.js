@@ -7,8 +7,11 @@ import Transition from "@/components/Transition";
 
 const skillsData = {
   "Frontend Languages": [
+
+    "Html",
+    "Css",
+    "Jquery",
     "Reactjs",
-    "Nextjs",
     "Mjml",
     "Bootstrap",
     "Tailwind",
@@ -17,14 +20,13 @@ const skillsData = {
   "Programming Languages": ["Java", "Python"],
   "Web Solutions / Content Management": ["Wordpress", "Woocommerce"],
   "Tool Stack": [
-    "Figma",
+    "Adobe Illustrator",
     "Adobe Photoshop",
+    "Figma",
     "Git",
-    "Adobe Illustrator,",
-    "Postman",
-    "UIPath",
-    "Selenium",
     "Netlify / Vercel",
+    "Postman",
+    "UIPath"
   ],
 };
 
