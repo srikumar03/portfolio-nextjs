@@ -19,7 +19,7 @@ const Footer = () => {
             Sridhar Kumar
           </span>
         </div>
-        <Link href="https://wa.link/s6pj7z" target="_blank">
+        <Link href="https://wa.link/healpi" target="_blank">
           <span className="flex">
             Say Hello &nbsp;
             <WhatsApp className={" bg-none "} />
