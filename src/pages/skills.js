@@ -15,6 +15,7 @@ const skillsData = {
     "Mjml",
     "Bootstrap",
     "Tailwind",
+    "Flutter"
   ],
   "Backend Languages": ["MySQL", "PHP", "Node.js", "MongoDB"],
   "Programming Languages": ["Java", "Python"],
